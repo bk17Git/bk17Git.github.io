@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector('form').onsubmit = () => {
+        
+        document.querySelector('#submit-btn').style.color = 'white';
+        document.querySelector('#submit-btn').style.font-weight = 500;
+        document.querySelector('#submit-btn').style.background = 'none';
 
         const baseCur = document.querySelector('#base-currency').value.toUpperCase()
 
